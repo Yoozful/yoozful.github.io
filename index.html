@@ -1,172 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Touch25 - Fast Number Touch Challenge</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #2a2418 0%, #101010 45%, #050505 100%);
-      color: #e9dcc7;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 32px 18px;
-    }
-
-    .page {
-      width: 100%;
-      max-width: 920px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 24px;
-      border-radius: 28px;
-      background: linear-gradient(145deg, #1a1a1a, #050505);
-      border: 2px solid #d2ae78;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 34px rgba(210, 174, 120, 0.28);
-      font-size: 42px;
-      font-weight: 800;
-      color: #d2ae78;
-    }
-
-    h1 {
-      font-size: 52px;
-      letter-spacing: 1px;
-      margin-bottom: 12px;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      color: #b8aa95;
-      margin-bottom: 34px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 16px 30px;
-      border-radius: 999px;
-      border: 1px solid #d2ae78;
-      color: #101010;
-      background: linear-gradient(135deg, #f1d79b, #b88742);
-      text-decoration: none;
-      font-weight: 800;
-      box-shadow: 0 10px 28px rgba(210, 174, 120, 0.22);
-      margin-bottom: 46px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-bottom: 42px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.045);
-      border: 1px solid rgba(210, 174, 120, 0.28);
-      border-radius: 22px;
-      padding: 24px 18px;
-    }
-
-    .card h3 {
-      color: #d2ae78;
-      margin-bottom: 10px;
-      font-size: 18px;
-    }
-
-    .card p {
-      color: #b8aa95;
-      font-size: 15px;
-      line-height: 1.5;
-    }
-
-    .section-title {
-      font-size: 26px;
-      margin-bottom: 16px;
-      color: #e9dcc7;
-    }
-
-    .coming {
-      border-radius: 22px;
-      padding: 24px;
-      background: rgba(210, 174, 120, 0.08);
-      border: 1px solid rgba(210, 174, 120, 0.25);
-      margin-bottom: 34px;
-    }
-
-    .coming strong {
-      color: #d2ae78;
-    }
-
-    footer {
-      font-size: 13px;
-      color: #8f8372;
-    }
-
-    @media (max-width: 720px) {
-      h1 {
-        font-size: 42px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f6f7f8">
+<title>Yoozful — 작은 순간을, 더 즐겁게</title>
+<meta name="description" content="Yoozful은 작은 순간에 즐거움과 몰입을 더하는 앱을 만듭니다. Touch 25, TileTen, Shotray, One Blank를 만나보세요.">
+<meta property="og:title" content="Yoozful — Apps for your everyday play">
+<meta property="og:description" content="Touch 25 · TileTen · Shotray · One Blank. Small moments, thoughtfully made.">
+<meta property="og:type" content="website"><meta property="og:image" content="https://yoozful.github.io/assets/social.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css"><script src="site.js" defer></script>
 </head>
 <body>
-  <main class="page">
-    <div class="logo">25</div>
-
-    <h1>Touch25</h1>
-    <p class="subtitle">Tap numbers 1 to 25 as fast as you can.</p>
-
-    <a class="button" href="https://play.google.com/store/apps/details?id=com.uuu.touch25" target="_blank">
-      Download on Google Play
-    </a>
-
-    <section class="cards">
-      <div class="card">
-        <h3>Fast Challenge</h3>
-        <p>Test your speed, focus, and reflexes in a simple number-touch game.</p>
-      </div>
-
-      <div class="card">
-        <h3>Global Ranking</h3>
-        <p>Compete with players around the world and aim for the fastest record.</p>
-      </div>
-
-      <div class="card">
-        <h3>Simple & Addictive</h3>
-        <p>Quick rounds, clean design, and instant replay for endless attempts.</p>
-      </div>
-    </section>
-
-    <h2 class="section-title">More Games</h2>
-
-    <div class="coming">
-      <p><strong>Touch Sum</strong> is coming soon.</p>
-      <p>A new number puzzle challenge from UUU Studio.</p>
-    </div>
-
-    <footer>
-      © 2026 UUU Studio. All rights reserved.
-    </footer>
-  </main>
-</body>
-</html>
+<a class="skip" href="#main" data-ko="본문으로 이동" data-en="Skip to content">본문으로 이동</a>
+<header class="header wrap">
+<a class="brand" href="./" aria-label="Yoozful home"><img src="assets/yoozful.svg" width="1566" height="462" alt="Yoozful"></a>
+<nav aria-label="Main"><a href="#apps" data-ko="앱" data-en="Apps">앱</a><a href="#about" data-ko="소개" data-en="About">소개</a><a href="#support" data-ko="지원" data-en="Support">지원</a><button id="language" type="button" aria-label="Switch to English">EN</button></nav>
+</header>
+<main id="main">
+<section class="hero wrap" aria-labelledby="hero-title">
+<div class="hero-copy"><p class="eyebrow">INDEPENDENT APP STUDIO</p>
+<h1 id="hero-title"><span data-ko="작은 순간을," data-en="Small moments.">작은 순간을,</span><br><span class="soft" data-ko="더 즐겁게." data-en="More to enjoy.">더 즐겁게.</span></h1>
+<p class="intro" data-ko="한 번의 터치, 하나의 빈칸, 한 번의 샷.&#10;일상의 작은 순간에 즐거움과 몰입을 더합니다." data-en="A tap. An empty space. Your next shot.&#10;Thoughtful apps for a little more play, every day.">한 번의 터치, 하나의 빈칸, 한 번의 샷.&#10;일상의 작은 순간에 즐거움과 몰입을 더합니다.</p>
+<a class="button primary" href="#apps" data-ko="앱 둘러보기" data-en="Explore our apps">앱 둘러보기</a></div>
+<div class="hero-art" aria-hidden="true">
+<div class="tile tile-touch">25<span>TOUCH</span></div>
+<div class="tile tile-ten"><span class="ten-block">3</span><span class="ten-block orange">7</span></div>
+<div class="tile tile-shot"><svg viewBox="0 0 200 200"><path d="M24 155 Q75 20 171 57" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="171" cy="57" r="9" fill="currentColor"/><path d="M24 155 H177" stroke="currentColor" stroke-opacity=".18" stroke-width="2"/></svg></div>
+<div class="tile tile-blank"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="empty"></i></div>
+</div>
+</section>
+<section id="apps" class="apps wrap" aria-labelledby="apps-title">
+<div class="section-head"><div><p class="eyebrow">MADE BY YOOZFUL</p><h2 id="apps-title" data-ko="각자의 방식으로, 몰입." data-en="Find your kind of flow.">각자의 방식으로, 몰입.</h2></div><p data-ko="가볍게 시작하고, 깊이 빠져드는 경험." data-en="Easy to begin. A little harder to put down.">가볍게 시작하고, 깊이 빠져드는 경험.</p></div>
+<div class="app-grid">
+<article class="app-card touch" aria-labelledby="touch-title">
+<div class="card-copy"><div class="meta"><span data-ko="집중력 · 스피드" data-en="FOCUS · SPEED">집중력 · 스피드</span><span class="status">Google Play</span></div><h3 id="touch-title">Touch 25</h3><p class="tagline" data-ko="1부터 25까지. 나를 넘어서는 터치." data-en="Tap 1 to 25. Beat your time.">1부터 25까지. 나를 넘어서는 터치.</p><p data-ko="숫자를 순서대로 누르고 나의 기록에 도전하세요. 짧은 한 판과 매일의 챌린지로 집중하는 즐거움을 만나보세요." data-en="Tap the numbers in order and chase your personal best. Find your focus in quick rounds and a daily challenge.">숫자를 순서대로 누르고 나의 기록에 도전하세요. 짧은 한 판과 매일의 챌린지로 집중하는 즐거움을 만나보세요.</p><a class="button" href="https://play.google.com/store/apps/details?id=com.uuu.touch25" data-ko="Google Play에서 보기" data-en="View on Google Play">Google Play에서 보기</a></div>
+<div class="app-visual"><span class="visual-word">Just one<br>more tap.</span><img src="assets/touch25.webp" alt="Touch 25의 데일리 챌린지와 클래식 플레이 홈 화면" data-alt-ko="Touch 25의 데일리 챌린지와 클래식 플레이 홈 화면" data-alt-en="Touch 25 home with Daily Challenge and Classic Play" width="480" height="1010" loading="lazy"></div>
+</article>
+<article class="app-card ten" aria-labelledby="ten-title">
+<div class="card-copy"><div class="meta"><span data-ko="숫자 · 퍼즐" data-en="NUMBERS · PUZZLE">숫자 · 퍼즐</span><span class="status" data-ko="테스트 중" data-en="In testing">테스트 중</span></div><h3 id="ten-title">Tile<span>Ten</span></h3><p class="tagline" data-ko="10을 만들고, 가능성을 열고." data-en="Make 10. Make space.">10을 만들고, 가능성을 열고.</p><p data-ko="숫자 블록을 놓아 합계 10을 만드세요. 비워지는 칸 사이에서 다음 수를 찾는 차분한 숫자 퍼즐입니다." data-en="Place number blocks and connect a line that adds up to 10. Clear space and discover your next move in a thoughtful number puzzle.">숫자 블록을 놓아 합계 10을 만드세요. 비워지는 칸 사이에서 다음 수를 찾는 차분한 숫자 퍼즐입니다.</p><a class="text-link" href="#support-tileten" data-ko="앱 문의 및 안내" data-en="Support & information">앱 문의 및 안내</a></div>
+<div class="app-visual"><span class="visual-word">A little<br>number<br>magic.</span><img src="assets/tileten.webp" alt="TileTen의 클래식과 데일리 챌린지 홈 화면" data-alt-ko="TileTen의 클래식과 데일리 챌린지 홈 화면" data-alt-en="TileTen home with Classic and Daily Challenge" width="480" height="853" loading="lazy"></div>
+</article>
+<article class="app-card shot" aria-labelledby="shot-title">
+<div class="card-copy"><div class="meta"><span data-ko="골프 · 영상" data-en="GOLF · VIDEO">골프 · 영상</span><span class="status" data-ko="테스트 중" data-en="In testing">테스트 중</span></div><h3 id="shot-title">Shotray</h3><p class="tagline" data-ko="샷이 그린 길을, 다시 보다." data-en="See your shot.">샷이 그린 길을, 다시 보다.</p><p data-ko="스윙을 촬영하거나 골프 영상을 불러오세요. 공의 궤적을 영상 위에서 확인하고 나의 샷을 돌아보세요." data-en="Record a swing or import a golf video. See the ball's flight over your footage and take another look at your shot.">스윙을 촬영하거나 골프 영상을 불러오세요. 공의 궤적을 영상 위에서 확인하고 나의 샷을 돌아보세요.</p><a class="text-link" href="#support-shotray" data-ko="앱 문의 및 안내" data-en="Support & information">앱 문의 및 안내</a></div>
+<div class="app-visual"><span class="visual-word">Every shot.<br>A new view.</span><img src="assets/shotray.webp" alt="Shotray의 영상 촬영과 불러오기 화면" data-alt-ko="Shotray의 영상 촬영과 불러오기 화면" data-alt-en="Shotray home with Record and Import video" width="480" height="944" loading="lazy"></div>
+</article>
+<article class="app-card blank" aria-labelledby="blank-title">
+<div class="card-copy"><div class="meta"><span data-ko="그림 · 슬라이딩 퍼즐" data-en="PICTURES · SLIDING PUZZLE">그림 · 슬라이딩 퍼즐</span><span class="status" data-ko="테스트 중" data-en="In testing">테스트 중</span></div><h3 id="blank-title">One Blank</h3><p class="tagline" data-ko="하나의 빈칸, 완성되는 그림." data-en="One empty space. So many possibilities.">하나의 빈칸, 완성되는 그림.</p><p data-ko="빈칸을 따라 조각을 움직여 그림을 완성하세요. 혼자 차분하게, 매일 새롭게, 때로는 친구와 함께 즐기는 퍼즐입니다." data-en="Slide the pieces into place and bring the picture together. Play at your own pace, try the daily puzzle, or race with friends.">빈칸을 따라 조각을 움직여 그림을 완성하세요. 혼자 차분하게, 매일 새롭게, 때로는 친구와 함께 즐기는 퍼즐입니다.</p><a class="text-link" href="#support-oneblank" data-ko="앱 문의 및 안내" data-en="Support & information">앱 문의 및 안내</a></div>
+<div class="app-visual"><span class="visual-word">Make room<br>for play.</span><img src="assets/oneblank.webp" alt="One Blank의 농장 그림 슬라이딩 퍼즐 화면" data-alt-ko="One Blank의 농장 그림 슬라이딩 퍼즐 화면" data-alt-en="One Blank home with a farm picture puzzle" width="384" height="760" loading="lazy"></div>
+</article>
+</div>
+<p class="availability" data-ko="테스트 중인 앱은 아직 일반 다운로드가 제한될 수 있습니다. 공개 출시 소식은 이곳에 업데이트됩니다." data-en="Apps in testing may not be available for general download yet. Public launch information will be updated here.">테스트 중인 앱은 아직 일반 다운로드가 제한될 수 있습니다. 공개 출시 소식은 이곳에 업데이트됩니다.</p>
+</section>
+<section id="about" class="about wrap" aria-labelledby="about-title">
+<div><p class="eyebrow">THE STUDIO</p><h2 id="about-title" data-ko="단순하게 시작해,&#10;오래 즐길 수 있도록." data-en="Simple to start.&#10;Made to stay with you.">단순하게 시작해,&#10;오래 즐길 수 있도록.</h2></div>
+<div class="about-copy"><img src="assets/yoozful.svg" alt="Yoozful" width="1566" height="462" loading="lazy"><p data-ko="Yoozful은 일상에서 떠오른 작은 아이디어를 앱으로 만듭니다. 숫자를 누르는 짧은 순간부터 퍼즐을 풀고 나의 샷을 돌아보는 시간까지, 각 경험에 어울리는 모양과 색을 고민합니다." data-en="Yoozful turns small, everyday ideas into apps. From a quick number challenge to a puzzle break or a closer look at your golf shot, we give each experience its own character.">Yoozful은 일상에서 떠오른 작은 아이디어를 앱으로 만듭니다. 숫자를 누르는 짧은 순간부터 퍼즐을 풀고 나의 샷을 돌아보는 시간까지, 각 경험에 어울리는 모양과 색을 고민합니다.</p></div>
+</section>
+<section id="support" class="support" aria-labelledby="support-title"><div class="wrap">
+<div class="section-head"><div><p class="eyebrow">HERE TO HELP</p><h2 id="support-title" data-ko="궁금한 점이 있나요?" data-en="Let's keep in touch.">궁금한 점이 있나요?</h2></div><p data-ko="앱별 문의와 개인정보 안내를 확인하세요." data-en="Find support and privacy information for each app.">앱별 문의와 개인정보 안내를 확인하세요.</p></div>
+<div class="support-list">
+<div class="support-row" id="support-touch25"><h3>Touch 25</h3><a href="mailto:bear.kim@kakao.com?subject=Touch%2025%20Support" data-ko="이메일 문의" data-en="Email support">이메일 문의</a><a href="https://docs.google.com/document/d/1xM7xuW8FeGMyQwlTMrTxcZk9nYN94fqPg7mdyIfgZ-0/edit?tab=t.0" data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</a></div>
+<div class="support-row" id="support-tileten"><h3>TileTen</h3><a href="mailto:llhelloll1234@gmail.com?subject=TileTen%20Support" data-ko="이메일 문의" data-en="Email support">이메일 문의</a><a href="https://tileten-395f9.web.app/privacy/" data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</a><a href="https://tileten-395f9.web.app/delete-data/" data-ko="데이터 삭제 안내" data-en="Data deletion">데이터 삭제 안내</a></div>
+<div class="support-row" id="support-shotray"><h3>Shotray</h3><a href="mailto:bear.kim@kakao.com?subject=Shotray%20Support" data-ko="이메일 문의" data-en="Email support">이메일 문의</a><a href="https://shotray-privacy.bear-skkim.chatgpt.site" data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</a><a href="https://shotray-privacy.bear-skkim.chatgpt.site/#delete-account" data-ko="계정 삭제 안내" data-en="Account deletion">계정 삭제 안내</a></div>
+<div class="support-row" id="support-oneblank"><h3>One Blank</h3><a href="mailto:llhelloll1234@gmail.com?subject=One%20Blank%20Support" data-ko="이메일 문의" data-en="Email support">이메일 문의</a><a href="https://oneblank-yoozful.web.app/privacy.html" data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</a><a href="https://oneblank-yoozful.web.app/delete-data.html" data-ko="데이터 삭제 안내" data-en="Data deletion">데이터 삭제 안내</a></div>
+</div>
+</div></section>
+</main>
+<footer class="wrap footer"><a class="brand" href="./" aria-label="Yoozful home"><img src="assets/yoozful.svg" width="1566" height="462" alt="Yoozful"></a><p>© 2026 Yoozful</p><a href="mailto:llhelloll1234@gmail.com" data-ko="스튜디오에 연락하기" data-en="Contact the studio">스튜디오에 연락하기</a></footer>
+</body></html>
