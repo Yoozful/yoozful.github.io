@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1576" height="470" viewBox="180 170 1576 470">
+  <title>Yoozful — uniform 62.4 unit strokes</title>
+  <desc>Custom Yoozful wordmark with embedded J H T. All stroke widths are 62.4 units, 20 percent heavier than the 52 unit version.</desc>
+  <defs>
+    <clipPath id="y-bounds"><rect x="160" y="176" width="420" height="366"/></clipPath>
+    <clipPath id="z-bounds"><rect x="1030" y="317" width="206" height="224"/></clipPath>
+  </defs>
+
+  <g fill="none" stroke="#111111" stroke-width="62.4" stroke-linecap="butt" stroke-linejoin="miter">
+    <path id="Y" clip-path="url(#y-bounds)" d="M 196 139 L 379 374 L 560 139 M 379 374 V 542"/>
+    <circle id="o1" cx="614" cy="423" r="100"/>
+    <circle id="o2" cx="886" cy="423" r="100"/>
+    <path id="l" d="M 1719 178 V 546.2"/>
+  </g>
+  <g fill="#111111" stroke="#111111" stroke-width="10.399999999999999" stroke-linejoin="miter">
+    <path id="z" d="M 1030 317 H 1236 V 350 L 1115.348576751006 489 H 1236 V 541 H 1030 V 508 L 1150.651423248994 369 H 1030 Z"/>
+    <rect id="f-black-stem" x="1294" y="190" width="52" height="127"/>
+    <rect id="f-top" x="1294" y="190" width="146" height="52"/>
+    <rect id="u-right" x="1590" y="317" width="52" height="224"/>
+    <rect id="u-bottom" x="1471" y="489" width="171" height="52"/>
+  </g>
+  <g fill="#707070" stroke="#707070" stroke-width="10.399999999999999" stroke-linejoin="miter">
+    <rect id="f-gray-stem" x="1294" y="317" width="52" height="316"/>
+    <rect id="J-foot" x="1200" y="581" width="146" height="52"/>
+    <rect id="HT-crossbar" x="1245" y="375" width="275" height="52"/>
+    <rect id="u-left" x="1419" y="317" width="52" height="224"/>
+  </g>
+</svg>
